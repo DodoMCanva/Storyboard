@@ -36,6 +36,7 @@ public class frmMenu extends javax.swing.JFrame {
         btnCrearPartida = new javax.swing.JButton();
         lbTituloNumeroJugadores = new javax.swing.JLabel();
         txtCodigoPartida = new javax.swing.JTextField();
+        lblLogoCrearPartida = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(900, 500));
@@ -55,7 +56,7 @@ public class frmMenu extends javax.swing.JFrame {
                 cbxTamañoTableroActionPerformed(evt);
             }
         });
-        jpMenu.add(cbxTamañoTablero, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 230, -1));
+        jpMenu.add(cbxTamañoTablero, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 230, -1));
 
         lblTituloCrearPartida.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTituloCrearPartida.setForeground(new java.awt.Color(255, 255, 255));
@@ -73,24 +74,32 @@ public class frmMenu extends javax.swing.JFrame {
         lbtituloTamañoTab.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         lbtituloTamañoTab.setForeground(new java.awt.Color(255, 255, 255));
         lbtituloTamañoTab.setText("Tamaño del tablero");
-        jpMenu.add(lbtituloTamañoTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, -1, -1));
-        jpMenu.add(SpNumeroJugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 230, -1));
+        jpMenu.add(lbtituloTamañoTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, -1, -1));
+        jpMenu.add(SpNumeroJugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 230, -1));
 
         lblTituloCodigoPartida.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         lblTituloCodigoPartida.setForeground(new java.awt.Color(255, 255, 255));
         lblTituloCodigoPartida.setText("Codigo Partida");
-        jpMenu.add(lblTituloCodigoPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, -1, -1));
+        jpMenu.add(lblTituloCodigoPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 310, -1, -1));
 
         btnCrearPartida.setBackground(new java.awt.Color(204, 255, 255));
         btnCrearPartida.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         btnCrearPartida.setText("CREAR PARTIDA");
+        btnCrearPartida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrearPartidaActionPerformed(evt);
+            }
+        });
         jpMenu.add(btnCrearPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 410, 200, 50));
 
         lbTituloNumeroJugadores.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         lbTituloNumeroJugadores.setForeground(new java.awt.Color(255, 255, 255));
         lbTituloNumeroJugadores.setText("Numero Jugadores");
-        jpMenu.add(lbTituloNumeroJugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, -1, -1));
+        jpMenu.add(lbTituloNumeroJugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, -1, -1));
         jpMenu.add(txtCodigoPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 340, 230, -1));
+
+        lblLogoCrearPartida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/LogoJuegoTim.png"))); // NOI18N
+        jpMenu.add(lblLogoCrearPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,7 +109,7 @@ public class frmMenu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jpMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jpMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
         );
 
         pack();
@@ -121,6 +130,12 @@ this.dispose();
     private void cbxTamañoTableroComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_cbxTamañoTableroComponentAdded
         // TODO add your handling code here:
     }//GEN-LAST:event_cbxTamañoTableroComponentAdded
+
+    private void btnCrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearPartidaActionPerformed
+   frmLobby loby= new frmLobby();
+   loby.setVisible(true);
+   this.dispose();
+    }//GEN-LAST:event_btnCrearPartidaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,6 +180,7 @@ this.dispose();
     private javax.swing.JComboBox<String> cbxTamañoTablero;
     private javax.swing.JPanel jpMenu;
     private javax.swing.JLabel lbTituloNumeroJugadores;
+    private javax.swing.JLabel lblLogoCrearPartida;
     private javax.swing.JLabel lblTituloCodigoPartida;
     private javax.swing.JLabel lblTituloCrearPartida;
     private javax.swing.JLabel lbtituloTamañoTab;
