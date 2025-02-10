@@ -592,7 +592,9 @@ public class frmPartida extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
-        // TODO add your handling code here:
+       frmScores score=new frmScores();
+       score.setVisible(true);
+       this.dispose();
     }//GEN-LAST:event_jButton50ActionPerformed
 
 //    /**
