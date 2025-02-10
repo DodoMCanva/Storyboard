@@ -34,13 +34,13 @@ public class frmCrearCuenta extends javax.swing.JFrame {
         lblTituloCorreoElectronico = new javax.swing.JLabel();
         lblNumeroCelular = new javax.swing.JLabel();
         lbTituloNombreUsuario = new javax.swing.JLabel();
-        jpImagenJugador = new javax.swing.JPanel();
         btnCargarUsuario = new javax.swing.JButton();
         lblTituloDescripImagen1 = new javax.swing.JLabel();
         btnCrearcuenta = new javax.swing.JButton();
         btnAvatarUsuario = new javax.swing.JButton();
         lblTituloDescripImagen2 = new javax.swing.JLabel();
         btnVolverCrearCuenta = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -76,19 +76,6 @@ public class frmCrearCuenta extends javax.swing.JFrame {
         lbTituloNombreUsuario.setText("Nombre");
         jpCrearCuenta.add(lbTituloNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
 
-        javax.swing.GroupLayout jpImagenJugadorLayout = new javax.swing.GroupLayout(jpImagenJugador);
-        jpImagenJugador.setLayout(jpImagenJugadorLayout);
-        jpImagenJugadorLayout.setHorizontalGroup(
-            jpImagenJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 180, Short.MAX_VALUE)
-        );
-        jpImagenJugadorLayout.setVerticalGroup(
-            jpImagenJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 220, Short.MAX_VALUE)
-        );
-
-        jpCrearCuenta.add(jpImagenJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 90, 180, 220));
-
         btnCargarUsuario.setText("Cargar");
         jpCrearCuenta.add(btnCargarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 330, -1, -1));
 
@@ -118,6 +105,9 @@ public class frmCrearCuenta extends javax.swing.JFrame {
             }
         });
         jpCrearCuenta.add(btnVolverCrearCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 20, -1, -1));
+
+        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        jpCrearCuenta.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 130, 160, 180));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -192,8 +182,8 @@ this.dispose();
     private javax.swing.JButton btnCargarUsuario;
     private javax.swing.JButton btnCrearcuenta;
     private javax.swing.JButton btnVolverCrearCuenta;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jpCrearCuenta;
-    private javax.swing.JPanel jpImagenJugador;
     private javax.swing.JLabel lbTituloNombreUsuario;
     private javax.swing.JLabel lblNumeroCelular;
     private javax.swing.JLabel lblTituloCorreoElectronico;
