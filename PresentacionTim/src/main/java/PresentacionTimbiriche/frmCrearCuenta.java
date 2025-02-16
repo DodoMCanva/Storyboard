@@ -28,62 +28,40 @@ public class frmCrearCuenta extends javax.swing.JFrame {
 
         jpCrearCuenta = new javax.swing.JPanel();
         lbltituloCrearcuenta = new javax.swing.JLabel();
-        txtNumeroCelular = new javax.swing.JTextField();
-        txtCorreoElectronico = new javax.swing.JTextField();
         txtNombreUsuario = new javax.swing.JTextField();
-        lblTituloCorreoElectronico = new javax.swing.JLabel();
-        lblNumeroCelular = new javax.swing.JLabel();
         lbTituloNombreUsuario = new javax.swing.JLabel();
         btnCargarUsuario = new javax.swing.JButton();
         lblTituloDescripImagen1 = new javax.swing.JLabel();
         btnCrearcuenta = new javax.swing.JButton();
         btnAvatarUsuario = new javax.swing.JButton();
         lblTituloDescripImagen2 = new javax.swing.JLabel();
-        btnVolverCrearCuenta = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jpCrearCuenta.setBackground(new java.awt.Color(153, 153, 153));
+        jpCrearCuenta.setBackground(new java.awt.Color(0, 0, 0));
         jpCrearCuenta.setMinimumSize(new java.awt.Dimension(900, 500));
         jpCrearCuenta.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbltituloCrearcuenta.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lbltituloCrearcuenta.setText("CREAR CUENTA");
-        jpCrearCuenta.add(lbltituloCrearcuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
-        jpCrearCuenta.add(txtNumeroCelular, new org.netbeans.lib.awtextra.AbsoluteConstraints(251, 260, 230, -1));
-
-        txtCorreoElectronico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCorreoElectronicoActionPerformed(evt);
-            }
-        });
-        jpCrearCuenta.add(txtCorreoElectronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, 230, -1));
-        jpCrearCuenta.add(txtNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 230, -1));
-
-        lblTituloCorreoElectronico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblTituloCorreoElectronico.setForeground(new java.awt.Color(255, 255, 255));
-        lblTituloCorreoElectronico.setText("Correo Electronico");
-        jpCrearCuenta.add(lblTituloCorreoElectronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, -1, -1));
-
-        lblNumeroCelular.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblNumeroCelular.setForeground(new java.awt.Color(255, 255, 255));
-        lblNumeroCelular.setText("Numero Celular");
-        jpCrearCuenta.add(lblNumeroCelular, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, -1, -1));
+        lbltituloCrearcuenta.setText("CUENTA");
+        jpCrearCuenta.add(lbltituloCrearcuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, -1, -1));
+        jpCrearCuenta.add(txtNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, 230, -1));
 
         lbTituloNombreUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbTituloNombreUsuario.setForeground(new java.awt.Color(255, 255, 255));
         lbTituloNombreUsuario.setText("Nombre");
-        jpCrearCuenta.add(lbTituloNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
+        jpCrearCuenta.add(lbTituloNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, -1, -1));
 
         btnCargarUsuario.setText("Cargar");
-        jpCrearCuenta.add(btnCargarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 330, -1, -1));
+        jpCrearCuenta.add(btnCargarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 300, -1, -1));
 
         lblTituloDescripImagen1.setForeground(new java.awt.Color(255, 255, 255));
         lblTituloDescripImagen1.setText("Seleccione un Avatar o bien haga");
-        jpCrearCuenta.add(lblTituloDescripImagen1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 370, -1, -1));
+        jpCrearCuenta.add(lblTituloDescripImagen1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 340, -1, -1));
 
-        btnCrearcuenta.setText("CREAR CUENTA");
+        btnCrearcuenta.setText("ENTRAR");
         btnCrearcuenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearcuentaActionPerformed(evt);
@@ -92,22 +70,17 @@ public class frmCrearCuenta extends javax.swing.JFrame {
         jpCrearCuenta.add(btnCrearcuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 430, 200, 50));
 
         btnAvatarUsuario.setText("Avatar");
-        jpCrearCuenta.add(btnAvatarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 330, -1, -1));
+        jpCrearCuenta.add(btnAvatarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, -1, -1));
 
         lblTituloDescripImagen2.setForeground(new java.awt.Color(255, 255, 255));
         lblTituloDescripImagen2.setText("click en \"cargar\" si desea añadir una imagen de perfil ");
-        jpCrearCuenta.add(lblTituloDescripImagen2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 390, -1, -1));
-
-        btnVolverCrearCuenta.setText("Volver");
-        btnVolverCrearCuenta.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVolverCrearCuentaActionPerformed(evt);
-            }
-        });
-        jpCrearCuenta.add(btnVolverCrearCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 20, -1, -1));
+        jpCrearCuenta.add(lblTituloDescripImagen2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 360, -1, -1));
 
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
-        jpCrearCuenta.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 130, 160, 180));
+        jpCrearCuenta.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 160, 180));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logonuevo.jpg"))); // NOI18N
+        jpCrearCuenta.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 270, 120));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -123,23 +96,13 @@ public class frmCrearCuenta extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtCorreoElectronicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoElectronicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCorreoElectronicoActionPerformed
-
     private void btnCrearcuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearcuentaActionPerformed
-frmInicio ini=new frmInicio();
+frmMenu ini=new frmMenu();
 ini.setVisible(true);
 this.dispose();
 
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCrearcuentaActionPerformed
-
-    private void btnVolverCrearCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverCrearCuentaActionPerformed
-       frmInicio ini= new frmInicio();
-       ini.setVisible(true);
-       this.dispose();
-    }//GEN-LAST:event_btnVolverCrearCuentaActionPerformed
 
 //    /**
 //     * @param args the command line arguments
@@ -181,17 +144,13 @@ this.dispose();
     private javax.swing.JButton btnAvatarUsuario;
     private javax.swing.JButton btnCargarUsuario;
     private javax.swing.JButton btnCrearcuenta;
-    private javax.swing.JButton btnVolverCrearCuenta;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jpCrearCuenta;
     private javax.swing.JLabel lbTituloNombreUsuario;
-    private javax.swing.JLabel lblNumeroCelular;
-    private javax.swing.JLabel lblTituloCorreoElectronico;
     private javax.swing.JLabel lblTituloDescripImagen1;
     private javax.swing.JLabel lblTituloDescripImagen2;
     private javax.swing.JLabel lbltituloCrearcuenta;
-    private javax.swing.JTextField txtCorreoElectronico;
     private javax.swing.JTextField txtNombreUsuario;
-    private javax.swing.JTextField txtNumeroCelular;
     // End of variables declaration//GEN-END:variables
 }

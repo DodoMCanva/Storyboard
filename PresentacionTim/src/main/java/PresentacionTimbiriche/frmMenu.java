@@ -37,6 +37,9 @@ public class frmMenu extends javax.swing.JFrame {
         lbTituloNumeroJugadores = new javax.swing.JLabel();
         txtCodigoPartida = new javax.swing.JTextField();
         lblLogoCrearPartida = new javax.swing.JLabel();
+        lbtituloTamañoTab1 = new javax.swing.JLabel();
+        txtCodigoPartida1 = new javax.swing.JTextField();
+        btnCrearPartida1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(900, 500));
@@ -56,11 +59,11 @@ public class frmMenu extends javax.swing.JFrame {
                 cbxTamañoTableroActionPerformed(evt);
             }
         });
-        jpMenu.add(cbxTamañoTablero, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 230, -1));
+        jpMenu.add(cbxTamañoTablero, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, 230, -1));
 
         lblTituloCrearPartida.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTituloCrearPartida.setForeground(new java.awt.Color(255, 255, 255));
-        lblTituloCrearPartida.setText("Crear Partida");
+        lblTituloCrearPartida.setText("Partida");
         jpMenu.add(lblTituloCrearPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
         btnVolverMenu.setText("Volver");
@@ -73,33 +76,49 @@ public class frmMenu extends javax.swing.JFrame {
 
         lbtituloTamañoTab.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         lbtituloTamañoTab.setForeground(new java.awt.Color(255, 255, 255));
-        lbtituloTamañoTab.setText("Tamaño del tablero");
-        jpMenu.add(lbtituloTamañoTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, -1, -1));
-        jpMenu.add(SpNumeroJugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 230, -1));
+        lbtituloTamañoTab.setText("Unirse a partida existente");
+        jpMenu.add(lbtituloTamañoTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, -1, -1));
+        jpMenu.add(SpNumeroJugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, 230, -1));
 
         lblTituloCodigoPartida.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         lblTituloCodigoPartida.setForeground(new java.awt.Color(255, 255, 255));
         lblTituloCodigoPartida.setText("Codigo Partida");
-        jpMenu.add(lblTituloCodigoPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 310, -1, -1));
+        jpMenu.add(lblTituloCodigoPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 310, -1, -1));
 
         btnCrearPartida.setBackground(new java.awt.Color(204, 255, 255));
         btnCrearPartida.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        btnCrearPartida.setText("CREAR PARTIDA");
+        btnCrearPartida.setText("UNIRSE A PARTIDA");
         btnCrearPartida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearPartidaActionPerformed(evt);
             }
         });
-        jpMenu.add(btnCrearPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 410, 200, 50));
+        jpMenu.add(btnCrearPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 200, 50));
 
         lbTituloNumeroJugadores.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         lbTituloNumeroJugadores.setForeground(new java.awt.Color(255, 255, 255));
         lbTituloNumeroJugadores.setText("Numero Jugadores");
-        jpMenu.add(lbTituloNumeroJugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, -1, -1));
-        jpMenu.add(txtCodigoPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 340, 230, -1));
+        jpMenu.add(lbTituloNumeroJugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, -1, -1));
+        jpMenu.add(txtCodigoPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 230, -1));
 
         lblLogoCrearPartida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/LogoJuegoTim.png"))); // NOI18N
         jpMenu.add(lblLogoCrearPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, -1, -1));
+
+        lbtituloTamañoTab1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        lbtituloTamañoTab1.setForeground(new java.awt.Color(255, 255, 255));
+        lbtituloTamañoTab1.setText("Tamaño del tablero");
+        jpMenu.add(lbtituloTamañoTab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 150, -1, -1));
+        jpMenu.add(txtCodigoPartida1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, 230, -1));
+
+        btnCrearPartida1.setBackground(new java.awt.Color(204, 255, 255));
+        btnCrearPartida1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        btnCrearPartida1.setText("CREAR PARTIDA");
+        btnCrearPartida1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrearPartida1ActionPerformed(evt);
+            }
+        });
+        jpMenu.add(btnCrearPartida1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 410, 200, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -116,7 +135,7 @@ public class frmMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverMenuActionPerformed
-frmInicio ini=new frmInicio();
+frmCrearCuenta ini=new frmCrearCuenta();
 ini.setVisible(true);
 this.dispose();
 
@@ -136,6 +155,10 @@ this.dispose();
    loby.setVisible(true);
    this.dispose();
     }//GEN-LAST:event_btnCrearPartidaActionPerformed
+
+    private void btnCrearPartida1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearPartida1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCrearPartida1ActionPerformed
 
 //    /**
 //     * @param args the command line arguments
@@ -176,6 +199,7 @@ this.dispose();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JSpinner SpNumeroJugadores;
     private javax.swing.JButton btnCrearPartida;
+    private javax.swing.JButton btnCrearPartida1;
     private javax.swing.JButton btnVolverMenu;
     private javax.swing.JComboBox<String> cbxTamañoTablero;
     private javax.swing.JPanel jpMenu;
@@ -184,6 +208,8 @@ this.dispose();
     private javax.swing.JLabel lblTituloCodigoPartida;
     private javax.swing.JLabel lblTituloCrearPartida;
     private javax.swing.JLabel lbtituloTamañoTab;
+    private javax.swing.JLabel lbtituloTamañoTab1;
     private javax.swing.JTextField txtCodigoPartida;
+    private javax.swing.JTextField txtCodigoPartida1;
     // End of variables declaration//GEN-END:variables
 }
