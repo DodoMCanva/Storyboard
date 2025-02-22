@@ -15,6 +15,11 @@ public class frmScores extends javax.swing.JFrame {
      */
     public frmScores() {
         initComponents();
+        setSize(new java.awt.Dimension(900, 550));
+        setPreferredSize(new java.awt.Dimension(900, 550));
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setDefaultLookAndFeelDecorated(true);
     }
 
     /**
@@ -35,6 +40,7 @@ public class frmScores extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
+        jPanel1.setPreferredSize(new java.awt.Dimension(900, 500));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setBackground(new java.awt.Color(51, 153, 255));
@@ -74,16 +80,16 @@ public class frmScores extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       frmMenu menu=new frmMenu();
-       menu.setVisible(true);
-       this.dispose();
+        frmMenu menu = new frmMenu();
+        menu.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
 //    /**

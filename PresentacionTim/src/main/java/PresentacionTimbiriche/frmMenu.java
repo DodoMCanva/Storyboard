@@ -14,7 +14,13 @@ public class frmMenu extends javax.swing.JFrame {
      * Creates new form Menu
      */
     public frmMenu() {
+
         initComponents();
+        setSize(new java.awt.Dimension(900, 550));
+        setPreferredSize(new java.awt.Dimension(900, 550));
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setDefaultLookAndFeelDecorated(true);
     }
 
     /**
@@ -33,22 +39,23 @@ public class frmMenu extends javax.swing.JFrame {
         lbtituloTamañoTab = new javax.swing.JLabel();
         SpNumeroJugadores = new javax.swing.JSpinner();
         lblTituloCodigoPartida = new javax.swing.JLabel();
-        btnCrearPartida = new javax.swing.JButton();
+        btnUnirsePartida = new javax.swing.JButton();
         lbTituloNumeroJugadores = new javax.swing.JLabel();
         txtCodigoPartida = new javax.swing.JTextField();
         lblLogoCrearPartida = new javax.swing.JLabel();
         lbtituloTamañoTab1 = new javax.swing.JLabel();
         txtCodigoPartida1 = new javax.swing.JTextField();
-        btnCrearPartida1 = new javax.swing.JButton();
+        btnCrearPartida = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(900, 500));
         setPreferredSize(new java.awt.Dimension(900, 500));
 
         jpMenu.setBackground(new java.awt.Color(0, 0, 0));
+        jpMenu.setPreferredSize(new java.awt.Dimension(900, 500));
         jpMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        cbxTamañoTablero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ninguno", "15x15", "10x10", "5x5" }));
+        cbxTamañoTablero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ninguno", "10x10", "20x20", "30x30" }));
         cbxTamañoTablero.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentAdded(java.awt.event.ContainerEvent evt) {
                 cbxTamañoTableroComponentAdded(evt);
@@ -85,15 +92,15 @@ public class frmMenu extends javax.swing.JFrame {
         lblTituloCodigoPartida.setText("Codigo Partida");
         jpMenu.add(lblTituloCodigoPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 310, -1, -1));
 
-        btnCrearPartida.setBackground(new java.awt.Color(204, 255, 255));
-        btnCrearPartida.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        btnCrearPartida.setText("UNIRSE A PARTIDA");
-        btnCrearPartida.addActionListener(new java.awt.event.ActionListener() {
+        btnUnirsePartida.setBackground(new java.awt.Color(204, 255, 255));
+        btnUnirsePartida.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        btnUnirsePartida.setText("UNIRSE A PARTIDA");
+        btnUnirsePartida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearPartidaActionPerformed(evt);
+                btnUnirsePartidaActionPerformed(evt);
             }
         });
-        jpMenu.add(btnCrearPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 200, 50));
+        jpMenu.add(btnUnirsePartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 200, 50));
 
         lbTituloNumeroJugadores.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         lbTituloNumeroJugadores.setForeground(new java.awt.Color(255, 255, 255));
@@ -110,15 +117,15 @@ public class frmMenu extends javax.swing.JFrame {
         jpMenu.add(lbtituloTamañoTab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 150, -1, -1));
         jpMenu.add(txtCodigoPartida1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, 230, -1));
 
-        btnCrearPartida1.setBackground(new java.awt.Color(204, 255, 255));
-        btnCrearPartida1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        btnCrearPartida1.setText("CREAR PARTIDA");
-        btnCrearPartida1.addActionListener(new java.awt.event.ActionListener() {
+        btnCrearPartida.setBackground(new java.awt.Color(204, 255, 255));
+        btnCrearPartida.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        btnCrearPartida.setText("CREAR PARTIDA");
+        btnCrearPartida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearPartida1ActionPerformed(evt);
+                btnCrearPartidaActionPerformed(evt);
             }
         });
-        jpMenu.add(btnCrearPartida1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 410, 200, 50));
+        jpMenu.add(btnCrearPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 410, 200, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -128,16 +135,16 @@ public class frmMenu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jpMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+            .addComponent(jpMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverMenuActionPerformed
-frmCrearCuenta ini=new frmCrearCuenta();
-ini.setVisible(true);
-this.dispose();
+        frmCrearCuenta ini = new frmCrearCuenta();
+        ini.setVisible(true);
+        this.dispose();
 
         // TODO add your handling code here:
     }//GEN-LAST:event_btnVolverMenuActionPerformed
@@ -150,15 +157,18 @@ this.dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_cbxTamañoTableroComponentAdded
 
-    private void btnCrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearPartidaActionPerformed
-   frmLobby loby= new frmLobby();
-   loby.setVisible(true);
-   this.dispose();
-    }//GEN-LAST:event_btnCrearPartidaActionPerformed
+    private void btnUnirsePartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnirsePartidaActionPerformed
+        frmLobby loby = new frmLobby();
+        loby.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnUnirsePartidaActionPerformed
 
-    private void btnCrearPartida1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearPartida1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCrearPartida1ActionPerformed
+    private void btnCrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearPartidaActionPerformed
+        frmLobby fr = new frmLobby();
+        fr.setVisible(true);
+        this.dispose();
+
+    }//GEN-LAST:event_btnCrearPartidaActionPerformed
 
 //    /**
 //     * @param args the command line arguments
@@ -199,7 +209,7 @@ this.dispose();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JSpinner SpNumeroJugadores;
     private javax.swing.JButton btnCrearPartida;
-    private javax.swing.JButton btnCrearPartida1;
+    private javax.swing.JButton btnUnirsePartida;
     private javax.swing.JButton btnVolverMenu;
     private javax.swing.JComboBox<String> cbxTamañoTablero;
     private javax.swing.JPanel jpMenu;

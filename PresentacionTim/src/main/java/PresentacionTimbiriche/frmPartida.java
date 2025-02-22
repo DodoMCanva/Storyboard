@@ -15,6 +15,11 @@ public class frmPartida extends javax.swing.JFrame {
      */
     public frmPartida() {
         initComponents();
+        setSize(new java.awt.Dimension(930, 550));
+        setPreferredSize(new java.awt.Dimension(900, 550));
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setDefaultLookAndFeelDecorated(true);
     }
 
     /**
@@ -124,10 +129,17 @@ public class frmPartida extends javax.swing.JFrame {
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jButton50 = new javax.swing.JButton();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jButton51 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(900, 500));
 
+        jPanel1.setMinimumSize(new java.awt.Dimension(900, 500));
+        jPanel1.setPreferredSize(new java.awt.Dimension(900, 500));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -432,28 +444,28 @@ public class frmPartida extends javax.swing.JFrame {
         jPanel1.add(lblImagenUsuario3, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 350, 70, 70));
 
         jLabel31.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 90, 20));
+        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 90, 20));
 
         jLabel32.setText("Score");
-        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
+        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
 
         jLabel33.setText("Score");
-        jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, -1, -1));
+        jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, -1, -1));
 
         jLabel34.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 90, 20));
+        jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 90, 20));
 
         jLabel35.setText("Score");
-        jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 120, -1, -1));
+        jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 140, -1, -1));
 
         jLabel36.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        jPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 100, 90, 20));
+        jPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 120, 90, 20));
 
         jLabel37.setText("Score");
-        jPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 450, -1, -1));
+        jPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 470, -1, -1));
 
         jLabel38.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        jPanel1.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 430, 90, 20));
+        jPanel1.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 450, 90, 20));
 
         jLabel39.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
         jLabel39.setText("2");
@@ -481,6 +493,23 @@ public class frmPartida extends javax.swing.JFrame {
         });
         jPanel1.add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 463, 170, 30));
 
+        jLabel44.setText("Nombre");
+        jPanel1.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, -1));
+
+        jLabel45.setText("Nombre");
+        jPanel1.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 90, -1, -1));
+
+        jLabel46.setText("Nombre");
+        jPanel1.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 420, -1, -1));
+
+        jLabel47.setText("Nombre");
+        jPanel1.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
+
+        jButton51.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton51.setText("TU TURNO");
+        jButton51.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(jButton51, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 70, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -489,7 +518,7 @@ public class frmPartida extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -592,9 +621,9 @@ public class frmPartida extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
-       frmScores score=new frmScores();
-       score.setVisible(true);
-       this.dispose();
+       JDialogTerminarJuego ter=new JDialogTerminarJuego(this, rootPaneCheckingEnabled);
+       ter.setVisible(true);
+       
     }//GEN-LAST:event_jButton50ActionPerformed
 
 //    /**
@@ -679,6 +708,7 @@ public class frmPartida extends javax.swing.JFrame {
     private javax.swing.JButton jButton49;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton50;
+    private javax.swing.JButton jButton51;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -720,6 +750,10 @@ public class frmPartida extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
